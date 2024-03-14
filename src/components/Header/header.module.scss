@@ -1,0 +1,18 @@
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+
+  max-width: 432px;
+  height: 60px;
+
+  color: var(--color-light-300);
+
+  background-color: var(--color-dark-900);
+  border-radius: 12px;
+
+  & a{
+    font-size: var( --font-size-s);
+    color: var(--color-light-300);
+  }
+}

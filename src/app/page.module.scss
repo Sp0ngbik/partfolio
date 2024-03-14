@@ -1,0 +1,15 @@
+.infoBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 10px 0;
+
+  font-size: 64px;
+  color: var(--color-dark-700);
+
+  & img {
+    border-radius: 5px;
+  }
+}
