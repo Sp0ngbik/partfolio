@@ -50,6 +50,15 @@ export default function Home() {
           />
         </div>
       </div>
+      <div className={s.about}>
+        <h2>About</h2>
+        <div>
+          I am Frontend Developer with <span>over 2 years </span> of practical experience, I
+          specialize in crafting web applications using <span>React and Next.js.</span> My passion
+          for IT technologies and Frontend development spans over two years, during which I`ve
+          consistently aimed for excellence in code quality and UI enhancement.
+        </div>
+      </div>
       <TechSkills />
     </main>
   )

@@ -1,12 +1,12 @@
+'use client'
 import React from 'react'
 import { useGSAP } from '@gsap/react'
 import { gsap, ScrollTrigger } from 'gsap/all'
-
+import s from './techSkills.module.scss'
 const TechSkills = () => {
-  gsap.registerPlugin(ScrollTrigger)
-
   const test = ['A', 'B', 'C']
   useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger)
     let ctx = gsap.context(() => {
       const tl = gsap.timeline({
         scrollTrigger: {
@@ -36,14 +36,17 @@ const TechSkills = () => {
     return () => ctx.revert()
   }, [])
   return (
-    <div className="section">
-      <div>
-        {test.map((el, index) => (
-          <div className="el" key={index}>
-            {el}
-          </div>
-        ))}
-      </div>
+    <div className={s.techsSection}>
+      <h2>My Techs</h2>
+      <section className="section">
+        <div>
+          {test.map((el, index) => (
+            <div className="el" key={index}>
+              {el}
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   )
 }
