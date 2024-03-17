@@ -1,53 +1,46 @@
-'use client'
-import React from 'react'
-import { useGSAP } from '@gsap/react'
-import { gsap, ScrollTrigger } from 'gsap/all'
+import React, { useEffect } from 'react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
 import s from './techSkills.module.scss'
+
 const TechSkills = () => {
   const test = ['A', 'B', 'C']
-  useGSAP(() => {
+  useEffect(() => {
     gsap.registerPlugin(ScrollTrigger)
-    let ctx = gsap.context(() => {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          markers: true,
-          trigger: '.section',
-          start: 'top bottom',
-          end: 'bottom top',
-          scrub: 4,
-        },
-        // x: 400,
-      })
-
-      tl.fromTo(
-        '.el',
-        {
-          x: index =>
-            index % 2 === 0 ? gsap.utils.random(100, 300) : gsap.utils.random(-100, -300),
-        },
-        {
-          x: index =>
-            index % 2 === 0 ? gsap.utils.random(-100, -300) : gsap.utils.random(100, 300),
-          ease: 'power1.inOut',
-        }
-      )
-    }, '.section')
-
-    return () => ctx.revert()
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.section',
+        markers: true,
+        scrub: 3,
+        start: 'top bottom',
+        end: 'bottom top',
+      },
+    })
+    tl.fromTo(
+      '.el',
+      {
+        x: index => (index % 2 ? gsap.utils.random(-100, -300) : gsap.utils.random(100, 300)),
+      },
+      {
+        x: index => (index % 2 ? gsap.utils.random(100, 300) : gsap.utils.random(-100, -300)),
+      }
+    )
   }, [])
+
   return (
-    <div className={s.techsSection}>
-      <h2>My Techs</h2>
-      <section className="section">
-        <div>
+    <section className={'section'}>
+      <div className={s.techsSection}>
+        <h2>My Techs</h2>
+        <div className={s.skills}>
           {test.map((el, index) => (
             <div className="el" key={index}>
               {el}
             </div>
           ))}
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   )
 }
 

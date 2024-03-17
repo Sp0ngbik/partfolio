@@ -8,9 +8,6 @@ dependencies:
   '@fontsource/ubuntu-mono':
     specifier: ^5.0.19
     version: 5.0.19
-  '@gsap/react':
-    specifier: ^2.1.0
-    version: 2.1.0
   clsx:
     specifier: ^2.1.0
     version: 2.1.0
@@ -171,13 +168,6 @@ packages:
 
   /@fontsource/ubuntu-mono@5.0.19:
     resolution: {integrity: sha512-98JGlEjX6QsY77sLyQhhdX/bK+rzUZd5TtK5nCA9EamrtrgPeqoUdn/SIZnCY7efWAlyzKeLnrbgleRSvHQw9g==}
-    dev: false
-
-  /@gsap/react@2.1.0:
-    resolution: {integrity: sha512-pwdFXvOM5IsRZXpWTKkQoEjb3/iUjDCU1BCJDlE6pHgVjG+7Ep/7+sszUgqVZ2Jc0mR8gnhtDWyx5cQAT4kwQw==}
-    dependencies:
-      gsap: 3.12.5
-      react: 18.2.0
     dev: false
 
   /@humanwhocodes/config-array@0.11.14:

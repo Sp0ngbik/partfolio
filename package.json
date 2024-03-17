@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@fontsource/ubuntu-mono": "^5.0.19",
-    "@gsap/react": "^2.1.0",
     "clsx": "^2.1.0",
     "gsap": "^3.12.5",
     "next": "14.1.3",

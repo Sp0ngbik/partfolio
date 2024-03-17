@@ -2,8 +2,7 @@
 import Image from 'next/image'
 import myPhoto from '@/../public/myPhoto.jpg'
 import s from './page.module.scss'
-import { useGSAP } from '@gsap/react'
-import { RefObject, useRef } from 'react'
+import {RefObject, useEffect, useRef} from 'react'
 import { gsap, TextPlugin } from 'gsap/all'
 import TechSkills from '@/components/TechSkills/TechSkills'
 
@@ -12,7 +11,7 @@ export default function Home() {
   const textProduce: RefObject<HTMLDivElement> = useRef(null)
   const avatarRef: RefObject<HTMLImageElement> = useRef(null)
 
-  useGSAP(() => {
+  useEffect(() => {
     gsap.to(textProduce.current, {
       duration: 3,
       text: {
