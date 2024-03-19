@@ -1,11 +1,40 @@
 .techsSection {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  & h2 {
+    margin: 10px 0;
+    font-size: var(--font-size-large);
+    color: var(--color-dark-900);
+  }
 }
 
-.skills{
+.skills {
   display: flex;
   flex-direction: column;
-  font-size: 64px;
+  align-items: center;
+
+  width: 100%;
+
+  font-size: var(--font-size-m-large);
+
+  & span {
+    font-size: var(--font-size-m-large);
+  }
+}
+
+.techBlock {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+
+  font-size: 25px;
+  text-align: center;
+
+  & div div:nth-child(3) {
+    color: red;
+  }
 }
