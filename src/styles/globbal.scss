@@ -13,9 +13,12 @@ a {
 }
 
 html {
+  overflow-x: hidden;
+
   max-width: 1200px;
   margin: 0 auto;
   padding: 30px 60px;
+
   background-color: var(--color-dark-500);
 }
 
