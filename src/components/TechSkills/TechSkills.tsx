@@ -18,7 +18,6 @@ const TechSkills = () => {
 
     const triggerOptions = {
       trigger: sectionRef.current,
-      markers: true,
       start: 'center bottom',
       end: 'bottom top',
     }
@@ -78,7 +77,7 @@ const TechSkills = () => {
         <div className={s.skills}>
           <div className={s.techBlock}>
             <div>
-              <span>Logic</span>
+              <h4>Logic</h4>
               {techArr.map((el, index) => (
                 <div key={index} className={'tech_skills'}>
                   {el}
@@ -86,7 +85,7 @@ const TechSkills = () => {
               ))}
             </div>
             <div>
-              <span>Tools</span>
+              <h4>Tools</h4>
               {toolsArr.map((el, index) => (
                 <div key={index} className={'tools'}>
                   {el}
@@ -94,7 +93,7 @@ const TechSkills = () => {
               ))}
             </div>
             <div>
-              <span>UI Design</span>
+              <h4>UI Design</h4>
               {uiArr.map((el, index) => (
                 <div key={index} className={'ui_skills'}>
                   {el}
