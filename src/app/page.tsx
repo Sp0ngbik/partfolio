@@ -2,9 +2,10 @@
 import Image from 'next/image'
 import myPhoto from '@/../public/myPhoto.jpg'
 import s from './page.module.scss'
-import {RefObject, useEffect, useRef} from 'react'
+import React, { RefObject, useEffect, useRef } from 'react'
 import { gsap, TextPlugin } from 'gsap/all'
 import TechSkills from '@/components/TechSkills/TechSkills'
+import { ThreeDCardDemo } from '@/components/Card/SuperCard'
 
 export default function Home() {
   gsap.registerPlugin(TextPlugin)
@@ -34,19 +35,21 @@ export default function Home() {
     )
   })
 
+
   return (
     <main>
       <div className={s.infoBlock}>
         <div ref={textProduce}></div>
         <div>
-          <Image
-            priority={true}
-            ref={avatarRef}
-            src={myPhoto}
-            alt={'photo not found'}
-            height={350}
-            width={350}
-          />
+          {/*<Image*/}
+          {/*  priority={true}*/}
+          {/*  ref={avatarRef}*/}
+          {/*  src={myPhoto}*/}
+          {/*  alt={'photo not found'}*/}
+          {/*  height={350}*/}
+          {/*  width={350}*/}
+          {/*/>*/}
+          <ThreeDCardDemo />
         </div>
       </div>
       <div className={s.about}>
