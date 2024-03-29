@@ -4,7 +4,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 import s from './techSkills.module.scss'
 import { techArr, toolsArr, uiArr } from '@/common/const/const'
-import { ThreeDCardDemo } from '@/components/Card/SuperCard'
 
 interface AnimationOptions {
   from: { [key: string]: number | string }
