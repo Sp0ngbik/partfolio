@@ -1,18 +1,15 @@
 'use client'
-import Image from 'next/image'
-import myPhoto from '@/../public/myPhoto.jpg'
 import s from './page.module.scss'
 import React, { RefObject, useEffect, useRef } from 'react'
 import { gsap, TextPlugin } from 'gsap/all'
 import TechSkills from '@/components/TechSkills/TechSkills'
-import { ThreeDCardDemo } from '@/components/Card/SuperCard'
+import { ProfileCard } from '@/components/ProfileCard/ProfileCard'
 
 export default function Home() {
-  gsap.registerPlugin(TextPlugin)
   const textProduce: RefObject<HTMLDivElement> = useRef(null)
-  const avatarRef: RefObject<HTMLImageElement> = useRef(null)
-
+  const containerRef: RefObject<HTMLDivElement> = useRef(null)
   useEffect(() => {
+    gsap.registerPlugin(TextPlugin)
     gsap.to(textProduce.current, {
       duration: 3,
       text: {
@@ -20,36 +17,14 @@ export default function Home() {
       },
       ease: 'none',
     })
-    gsap.fromTo(
-      avatarRef.current,
-      {
-        opacity: 0,
-        scale: 1.4,
-      },
-      {
-        opacity: 1,
-        scale: 1,
-        duration: 1.3,
-        ease: 'power3.inOut',
-      }
-    )
   })
-
 
   return (
     <main>
-      <div className={s.infoBlock}>
+      <div className={s.infoBlock} ref={containerRef}>
         <div ref={textProduce}></div>
         <div>
-          {/*<Image*/}
-          {/*  priority={true}*/}
-          {/*  ref={avatarRef}*/}
-          {/*  src={myPhoto}*/}
-          {/*  alt={'photo not found'}*/}
-          {/*  height={350}*/}
-          {/*  width={350}*/}
-          {/*/>*/}
-          <ThreeDCardDemo />
+          <ProfileCard />
         </div>
       </div>
       <div className={s.about}>
