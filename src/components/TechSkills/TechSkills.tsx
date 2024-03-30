@@ -2,10 +2,9 @@ import React, { RefObject, useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-import s from './techSkills.module.scss'
+import s from './TechSkills.module.scss'
 import { techArr, toolsArr, uiArr } from '@/common/const/const'
-import { SparklesCore } from '@/components/Sparkles/SparkleCore/SparkleCore'
-import Sparkles from '@/components/Sparkles/Sparkles'
+import { Sparkles } from '@/components/Sparkles'
 
 interface AnimationOptions {
   from: { [key: string]: number | string }
