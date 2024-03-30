@@ -1,0 +1,17 @@
+.sparkleWrapper {
+  position: absolute;
+  left: 0;
+
+  display: flex;
+
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sparkle {
+  width: 100%;
+  max-width: 2500px;
+  height: 100vh;
+  max-height: 400px;
+  margin: 0 auto;
+}

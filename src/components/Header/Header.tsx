@@ -1,4 +1,4 @@
-import s from './header.module.scss'
+import s from './Header.module.scss'
 import Link from "next/link";
 
 const Header = () => {
@@ -7,7 +7,6 @@ const Header = () => {
       <div className={s.navBar}>
         <Link href={'/'}>About</Link>
         <Link href={'/projects'}>Projects</Link>
-        <Link href={'/blog'}>Blog</Link>
         <Link href={'/resume'}>Resume</Link>
       </div>
     </header>

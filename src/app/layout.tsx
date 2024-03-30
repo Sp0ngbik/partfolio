@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import '@/styles/globbal.scss'
-import { ReactNode } from 'react'
+import React, { ReactNode } from 'react'
 import Header from '@/components/Header/Header'
 import Footer from '@/components/Footer/Footer'
 
