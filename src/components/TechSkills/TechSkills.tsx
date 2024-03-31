@@ -2,8 +2,9 @@ import React, { RefObject, useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-import s from './techSkills.module.scss'
+import s from './TechSkills.module.scss'
 import { techArr, toolsArr, uiArr } from '@/common/const/const'
+import { Sparkles } from '@/components/Sparkles'
 
 interface AnimationOptions {
   from: { [key: string]: number | string }
@@ -72,6 +73,7 @@ const TechSkills = () => {
 
   return (
     <section className={'section'} ref={sectionRef}>
+      <Sparkles />
       <div className={s.techsSection}>
         <h2>My Techs</h2>
         <div className={s.skills}>

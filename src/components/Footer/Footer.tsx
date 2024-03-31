@@ -2,7 +2,7 @@
 const Footer = () => {
     return (
         <footer>
-            FOOTER BLOCk
+            FOOTER BLOCkFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF!!
         </footer>
     );
 };

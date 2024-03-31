@@ -1,5 +1,5 @@
 @forward 'colors.';
-@forward "typography";
+@forward 'typography';
 
 a {
   color: inherit;
@@ -14,14 +14,17 @@ a {
 
 html {
   overflow-x: hidden;
+  display: flex;
 
   max-width: 1200px;
   margin: 0 auto;
   padding: 30px 60px;
 
-  background-color: var(--color-dark-500);
+  //background-color: var(--color-dark-500);
+
+  background-color: black;
 }
 
-body{
+body {
   font-family: 'Ubuntu Mono', monospace;
 }
