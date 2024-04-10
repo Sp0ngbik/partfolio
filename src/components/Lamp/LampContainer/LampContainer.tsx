@@ -207,14 +207,14 @@ export const LampContainer = ({
           }}
           style={{
             position: 'absolute',
-            // inset: 'auto',
-            // zIndex: 50,
-            // height: '0.5rem', /* h-0.5 */
-            // width: '30rem',
-            // transform: 'translateY(-7rem)', /* -translate-y-[7rem] */
-            // backgroundColor: 'transparent' /* bg-cyan-400 */
+            inset: 'auto',
+            zIndex: 50,
+            height: '0.5rem', /* h-0.5 */
+            width: '30rem',
+            transform: 'translateY(-7rem)', /* -translate-y-[7rem] */
+            backgroundColor: 'transparent' /* bg-cyan-400 */
           }}
-          // className="absolute inset-auto z-50 h-0.5 w-[30rem] -translate-y-[7rem] bg-cyan-400 "
+          className="absolute inset-auto z-50 h-0.5 w-[30rem] -translate-y-[7rem] bg-cyan-400 "
         ></motion.div>
 
         <div
