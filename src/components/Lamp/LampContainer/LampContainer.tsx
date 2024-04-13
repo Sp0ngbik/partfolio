@@ -107,15 +107,8 @@ export const LampContainer = ({
         >
           <div
             style={{
-              // position: 'absolute',
-              // width: '100%',
               left: 0,
-              // backgroundColor: '#1f2937' /* bg-slate-950 */,
-              // height: '10rem' /* h-40 */,
-              // bottom: 0,
-              // zIndex: 20,
               maskImage: 'linear-gradient(to top, white, transparent)',
-              // maskComposite: 'destination-out',
               position: 'absolute',
               width: '100%' /* w-40 */,
               height: '10rem',
@@ -123,9 +116,6 @@ export const LampContainer = ({
               backgroundColor: '#1f2937' /* bg-slate-950 */,
               bottom: 0,
               zIndex: 20,
-              // maskImage: 'linear-gradient(to top, white, transparent)',
-
-              // maskImage: 'linear-gradient(to top left, rgba(255,255,255,0.15), transparent)',
             }}
           />
           <div
@@ -168,12 +158,7 @@ export const LampContainer = ({
             position: 'absolute',
             inset: 'auto',
             zIndex: 50,
-            // height: '9rem', /* h-36 */
-            // width: '28rem',
-            // transform: 'translateY(-50%)', /* -translate-y-1/2 */
-            // borderRadius: '9999px', /* rounded-full */
-            // backgroundColor: 'rgba(0, 255, 255, 0.5)', /* bg-cyan-500 opacity-50 */
-            // backdropFilter: 'blur(12px)' /* blur-3xl */
+
           }}
         ></div>
         <motion.div
@@ -190,12 +175,9 @@ export const LampContainer = ({
             zIndex: 30,
             height: '9rem', /* h-36 */
             width: '16rem' /* w-64 */,
-            // transform: 'translateY(-6rem)', /* -translate-y-[6rem] */
-            // borderRadius: '9999px', /* rounded-full */
             backgroundColor: '#f3f3f3', /* bg-cyan-400 */
             filter: 'blur(8px)' /* blur-2xl */
           }}
-          // className="absolute inset-auto z-30 h-36 w-64 -translate-y-[6rem] rounded-full bg-cyan-400 blur-2xl"
         ></motion.div>
         <motion.div
           initial={{ width: '15rem' }}
@@ -222,12 +204,7 @@ export const LampContainer = ({
             position: 'absolute',
             inset: 'auto',
             zIndex: 40,
-            // height: '11rem', /* h-44 */
-            // width: '100%',
-            // transform: 'translateY(-12.5rem)', /* -translate-y-[12.5rem] */
-            // backgroundColor: 'transparent' /* bg-slate-950 */
           }}
-          // className="absolute inset-auto z-40 h-44 w-full -translate-y-[12.5rem] bg-slate-950 "
         ></div>
       </div>
 
