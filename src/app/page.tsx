@@ -5,7 +5,6 @@ import {gsap, TextPlugin} from 'gsap/all'
 import TechSkills from '@/components/TechSkills/TechSkills'
 import {ProfileCard} from '@/components/ProfileCard/ProfileCard'
 import Lamp from '@/components/Lamp/Lamp'
-import {LampContainer} from "@/components/Lamp/LampContainer";
 
 export default function Home() {
     const textProduce: RefObject<HTMLDivElement> = useRef(null)
@@ -30,8 +29,6 @@ export default function Home() {
                 </div>
             </div>
             <div className={s.about}>
-                {/*<LampContainer>*/}
-                    <Lamp/>
                     <h2>About</h2>
                     <div>
                         I am Frontend Developer with <span>over 2 years </span> of practical experience, I
@@ -39,7 +36,6 @@ export default function Home() {
                         for IT technologies and Frontend development spans over two years, during which I`ve
                         consistently aimed for excellence in code quality and UI enhancement.
                     </div>
-                {/*</LampContainer>*/}
             </div>
             <TechSkills/>
         </main>
