@@ -1,10 +1,9 @@
 'use client'
 import s from './page.module.scss'
-import React, {RefObject, useEffect, useRef} from 'react'
-import {gsap, TextPlugin} from 'gsap/all'
+import React, { RefObject, useEffect, useRef } from 'react'
+import { gsap, TextPlugin } from 'gsap/all'
 import TechSkills from '@/components/TechSkills/TechSkills'
-import {ProfileCard} from '@/components/ProfileCard/ProfileCard'
-import Lamp from '@/components/Lamp/Lamp'
+import { ProfileCard } from '@/components/ProfileCard/ProfileCard'
 
 export default function Home() {
     const textProduce: RefObject<HTMLDivElement> = useRef(null)
