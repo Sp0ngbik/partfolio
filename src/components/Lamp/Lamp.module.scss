@@ -1,0 +1,256 @@
+.superContainer {
+  //margin-top: 2rem;
+
+  //padding: 1rem 0;
+  width: 100%;
+
+  font-size: 2.25rem;
+  font-weight: 500;
+  color: var(--color-light-900);
+
+  //color: red;
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  background-image: linear-gradient(to bottom right, black, black);
+  background-clip: text;
+}
+
+@media (width >= 768px) {
+  .yourClassName {
+    font-size: 5rem;
+  }
+}
+
+.container {
+  position: relative;
+  z-index: 0;
+
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  min-height: 80vh;
+  margin: 0 auto;
+
+  border-radius: 0.375rem;
+}
+
+.subContainer {
+  isolation: isolate;
+  position: relative;
+  z-index: 0;
+  transform: scaleY(1.25);
+
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.subDiv {
+  position: absolute;
+  z-index: 20;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 10rem;
+
+  background-color: var(--color-light-300); /* Вам нужно задать эту переменную в вашем CSS */
+
+  mask-image: linear-gradient(to top, white, transparent);
+}
+
+.subDiv2 {
+  position: absolute;
+  z-index: 20;
+  bottom: 0;
+  left: 0;
+
+  width: 10rem;
+  height: 100%;
+
+  //background-color: var(
+  //  --color-light-300
+  //); /* Вы должны определить CSS переменную --color-slate-950 в вашем стилевом определении */
+
+  //mask-image: linear-gradient(to right, white, transparent);
+}
+
+.firstMotion {
+  position: absolute;
+  right: 50%;
+
+  overflow: visible;
+
+  width: 30rem;
+  height: 14rem;
+
+  //color: white;
+
+  background: conic-gradient(from 70deg at center top, cyan, transparent, transparent);
+}
+
+.firstDiv {
+  position: absolute;
+  z-index: 20;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 10rem;
+
+  background-color: black; /* Ensure to define the CSS variable --color-slate-950 in your style definition */
+
+  mask-image: linear-gradient(to top, black, transparent);
+}
+
+.secondDiv {
+  position: absolute;
+  z-index: 20;
+  bottom: 0;
+  left: 0;
+
+  width: 10rem;
+  height: 100%;
+
+  background-color: black;
+
+  mask-image: linear-gradient(to right, black, transparent);
+}
+
+.secondMotion {
+  position: absolute;
+  left: 50%;
+
+  width: 30rem;
+  height: 14rem;
+
+  color: white;
+
+  background: conic-gradient(from 290deg at center top, transparent, transparent, cyan);
+}
+
+.thirdDiv {
+  position: absolute;
+  z-index: 20;
+  right: 0;
+  bottom: 0;
+
+  width: 10rem;
+  height: 100%;
+
+  background-color: black; /* Make sure to define the CSS variable --color-slate-950 in your style definition */
+
+  mask-image: linear-gradient(to left, black, transparent);
+}
+
+.frthDiv {
+  position: absolute;
+  z-index: 20;
+  right: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 10rem;
+
+  background-color: black; /* Make sure to define the CSS variable --color-slate-950 in your style definition */
+
+  mask-image: linear-gradient(to top, black, transparent);
+}
+
+.fifthDiv {
+  position: absolute;
+  top: 50%;
+  transform: translateY(3rem) scaleX(1.5); /* 3rem corresponds to Tailwind's translate-y-12 and scaleX(1.5) to scale-x-150 */
+
+  width: 100%;
+  height: 12rem; /* Tailwind's h-48 */
+
+  background-color: transparent; /* This is a slate shade; replace with the equivalent of your `slate-950` color */
+  filter: blur(32px); /* This is a rough equivalent to Tailwind's blur-2xl */
+}
+
+.sixDiv {
+  position: absolute;
+  z-index: 50;
+  top: 50%;
+
+  width: 100%;
+  height: 12rem; /* Equivalent to Tailwind's h-48 */
+
+  opacity: 0.1; /* Tailwind's opacity-10 */
+  background-color: transparent;
+  backdrop-filter: blur(12px); /* backdrop-blur-md in Tailwind */
+}
+
+.sevenDiv {
+  position: absolute;
+
+  //z-index: 50;
+
+  //transform: translateY(-50%); /* Moves the element up by half its height */
+
+  width: 28rem; /* The custom width you've set */
+  height: 9rem; /* Equivalent to h-36 in Tailwind */
+  opacity: 0.5; /* Matches opacity-50 in Tailwind */
+  //background-color: #22d3ee; /* This is the hex color code for cyan-500 in Tailwind */
+  //filter: blur(64px); /* This is an approximation for blur-3xl in Tailwind */
+  //border-radius: 999px; /* Creates a fully rounded element, equivalent to rounded-full in Tailwind */
+
+  /* Make sure the inset-auto effect is managed correctly, depending on context. */
+}
+
+.thirdMotion {
+  position: absolute;
+  z-index: 30;
+  transform: translateY(-6rem); /* The negative value corresponds to the -translate-y-[6rem] */
+
+  width: 16rem; /* Tailwind's w-64 */
+  height: 9rem; /* Tailwind's h-36 */
+
+  opacity: 0.5; /* This corresponds to Tailwind's opacity-50 */
+  //background-color: #0bc5ea; /* This hex code is for Tailwind's bg-cyan-400 color */
+  filter: blur(32px); /* This gives a large blur effect resembling Tailwind's blur-2xl */
+  border-radius: 9999px; /* This creates a fully rounded element as with Tailwind's rounded-full */
+}
+
+.fourthMotion {
+  position: absolute;
+  z-index: 50;
+  transform: translateY(-7rem); /* This moves the element up by 7rem */
+
+  width: 30rem; /* Custom width as specified */
+  //width: 130rem; /* Custom width as specified */
+  height: 0.125rem; /* Equivalent to h-0.5 in Tailwind */
+
+  background-color: #0bc5ea; /* Hex code for Tailwind's bg-cyan-400 */
+}
+
+.eightDiv {
+  position: absolute;
+  z-index: 40;
+  transform: translateY(-12.5rem);
+
+  width: 100%;
+  height: 11rem; /* Equivalent to h-44 in Tailwind */
+}
+
+.lastDiv {
+  position: relative;
+  z-index: 50;
+  transform: translateY(-18rem); /* Tailwind's -translate-y-80 converted to rem */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  //padding-right: 1.25rem;
+  //padding-left: 1.25rem;
+}
