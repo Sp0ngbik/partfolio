@@ -62,7 +62,7 @@
   width: 100%;
   height: 10rem;
 
-  background-color: var(--color-light-300); /* Вам нужно задать эту переменную в вашем CSS */
+  background-color: var(--color-light-300);
 
   mask-image: linear-gradient(to top, white, transparent);
 }
@@ -78,7 +78,7 @@
 
   //background-color: var(
   //  --color-light-300
-  //); /* Вы должны определить CSS переменную --color-slate-950 в вашем стилевом определении */
+  //);
 
   //mask-image: linear-gradient(to right, white, transparent);
 }
@@ -106,7 +106,7 @@
   width: 100%;
   height: 10rem;
 
-  background-color: black; /* Ensure to define the CSS variable --color-slate-950 in your style definition */
+  background-color: black;
 
   mask-image: linear-gradient(to top, black, transparent);
 }
@@ -146,7 +146,7 @@
   width: 10rem;
   height: 100%;
 
-  background-color: black; /* Make sure to define the CSS variable --color-slate-950 in your style definition */
+  background-color: black;
 
   mask-image: linear-gradient(to left, black, transparent);
 }
@@ -160,7 +160,7 @@
   width: 100%;
   height: 10rem;
 
-  background-color: black; /* Make sure to define the CSS variable --color-slate-950 in your style definition */
+  background-color: black;
 
   mask-image: linear-gradient(to top, black, transparent);
 }
@@ -168,13 +168,13 @@
 .fifthDiv {
   position: absolute;
   top: 50%;
-  transform: translateY(3rem) scaleX(1.5); /* 3rem corresponds to Tailwind's translate-y-12 and scaleX(1.5) to scale-x-150 */
+  transform: translateY(3rem) scaleX(1.5);
 
   width: 100%;
-  height: 12rem; /* Tailwind's h-48 */
+  height: 12rem;
 
-  background-color: transparent; /* This is a slate shade; replace with the equivalent of your `slate-950` color */
-  filter: blur(32px); /* This is a rough equivalent to Tailwind's blur-2xl */
+  background-color: transparent;
+  filter: blur(32px);
 }
 
 .sixDiv {
@@ -183,11 +183,11 @@
   top: 50%;
 
   width: 100%;
-  height: 12rem; /* Equivalent to Tailwind's h-48 */
+  height: 12rem;
 
-  opacity: 0.1; /* Tailwind's opacity-10 */
+  opacity: 0.1;
   background-color: transparent;
-  backdrop-filter: blur(12px); /* backdrop-blur-md in Tailwind */
+  backdrop-filter: blur(12px);
 }
 
 .sevenDiv {
@@ -195,42 +195,44 @@
 
   //z-index: 50;
 
-  //transform: translateY(-50%); /* Moves the element up by half its height */
+  //transform: translateY(-50%);
 
-  width: 28rem; /* The custom width you've set */
-  height: 9rem; /* Equivalent to h-36 in Tailwind */
-  opacity: 0.5; /* Matches opacity-50 in Tailwind */
-  //background-color: #22d3ee; /* This is the hex color code for cyan-500 in Tailwind */
-  //filter: blur(64px); /* This is an approximation for blur-3xl in Tailwind */
-  //border-radius: 999px; /* Creates a fully rounded element, equivalent to rounded-full in Tailwind */
+  width: 28rem;
+  height: 9rem;
+  opacity: 0.5;
 
-  /* Make sure the inset-auto effect is managed correctly, depending on context. */
+  //background-color: #22d3ee;
+  //filter: blur(64px);
+  //border-radius: 999px;
+
 }
 
 .thirdMotion {
   position: absolute;
   z-index: 30;
-  transform: translateY(-6rem); /* The negative value corresponds to the -translate-y-[6rem] */
+  transform: translateY(-6rem);
 
-  width: 16rem; /* Tailwind's w-64 */
-  height: 9rem; /* Tailwind's h-36 */
+  width: 16rem;
+  height: 9rem;
 
-  opacity: 0.5; /* This corresponds to Tailwind's opacity-50 */
-  //background-color: #0bc5ea; /* This hex code is for Tailwind's bg-cyan-400 color */
-  filter: blur(32px); /* This gives a large blur effect resembling Tailwind's blur-2xl */
-  border-radius: 9999px; /* This creates a fully rounded element as with Tailwind's rounded-full */
+  opacity: 0.5;
+
+  //background-color: #0bc5ea;
+  filter: blur(32px);
+  border-radius: 9999px;
 }
 
 .fourthMotion {
   position: absolute;
   z-index: 50;
-  transform: translateY(-7rem); /* This moves the element up by 7rem */
+  transform: translateY(-7rem);
 
-  width: 30rem; /* Custom width as specified */
-  //width: 130rem; /* Custom width as specified */
-  height: 0.125rem; /* Equivalent to h-0.5 in Tailwind */
+  width: 30rem; 
 
-  background-color: #0bc5ea; /* Hex code for Tailwind's bg-cyan-400 */
+  //width: 130rem;
+  height: 0.125rem; 
+
+  background-color: #0bc5ea;
 }
 
 .eightDiv {
@@ -239,13 +241,13 @@
   transform: translateY(-12.5rem);
 
   width: 100%;
-  height: 11rem; /* Equivalent to h-44 in Tailwind */
+  height: 11rem;
 }
 
 .lastDiv {
   position: relative;
   z-index: 50;
-  transform: translateY(-18rem); /* Tailwind's -translate-y-80 converted to rem */
+  transform: translateY(-18rem);
 
   display: flex;
   flex-direction: column;
