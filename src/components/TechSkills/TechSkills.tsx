@@ -72,7 +72,7 @@ const TechSkills = () => {
   }, [])
 
   return (
-    <section className={'section'} ref={sectionRef}>
+    <section className={s.techsSectionWrapper} ref={sectionRef}>
       <Sparkles />
       <div className={s.techsSection}>
         <h2>My Techs</h2>
