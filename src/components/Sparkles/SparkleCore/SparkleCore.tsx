@@ -55,8 +55,6 @@ export const SparklesCore = (props: ParticlesProps) => {
         <motion.div
             animate={controls}
             className={className}
-            // style={{  position:'absolute',left:'0',bottom:'0', height: '100vh', width: '100vw' }}
-
         >
             {init && (
                 <Particles
