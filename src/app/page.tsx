@@ -30,7 +30,7 @@ export default function Home() {
       </div>
       <div className={s.about}>
         <LampContainer>
-        {/*<h2>About</h2>*/}
+        <span>About</span>
         <div>
           I am Frontend Developer with <span>over 2 years </span> of practical experience, I
           specialize in crafting web applications using <span>React and Next.js.</span> My passion
