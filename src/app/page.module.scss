@@ -1,38 +1,9 @@
+.bodyBlock{
+  width: 100%;
+}
+
 .mainBlock {
   place-items: center;
   width: 100%;
 }
 
-.infoBlock {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-
-  margin: 10px 0;
-
-  color: var(--color-dark-700);
-
-  & > div:first-child {
-    width: 650px;
-    height: 150px;
-    font-size: 64px;
-  }
-}
-
-.about {
-  position: relative;
-
-  display: flex;
-  flex-direction: column;
-
-  width: 100%;
-  padding: 20px 0 40px;
-
-  font-size: var(--font-size-m-large);
-  color: var(--color-dark-900);
-
-  & span {
-    font-weight: 700;
-  }
-}

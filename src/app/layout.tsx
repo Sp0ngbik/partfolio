@@ -3,6 +3,7 @@ import '@/styles/globbal.scss'
 import React, { ReactNode } from 'react'
 import Header from '@/components/Header/Header'
 import Footer from '@/components/Footer/Footer'
+import s from './page.module.scss'
 
 export const metadata: Metadata = {
   title: 'Uladzislau Astapuk',
@@ -16,9 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={s.bodyBlock}>
         <Header />
-        {children}
+        <main className={s.mainBlock}>{children}</main>
         <Footer />
       </body>
     </html>
