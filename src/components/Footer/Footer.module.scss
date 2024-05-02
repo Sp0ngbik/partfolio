@@ -1,0 +1,33 @@
+.footerWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  margin: 20px 0 0;
+
+  font-size: var(--font-size-xl);
+  color: var(--color-light-300);
+
+  & span {
+    font-size: var(--font-size-xs);
+  }
+
+  & .navLinks {
+    display: flex;
+    gap: 10px;
+    place-content: center center;
+    align-items: center;
+
+    & a {
+      padding: 5px;
+      background-color: var(--color-dark-700);
+      border-radius: 5px;
+    }
+  }
+
+  & .socialLinks {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
