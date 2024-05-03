@@ -1,7 +1,7 @@
 .projectsWrapper {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   align-items: flex-start;
 
   width: 100%;
@@ -12,6 +12,7 @@
   a {
     padding: 10px;
     background-color: var(--color-dark-700);
+    border-top: 1px solid var(--color-light-300);
     border-radius: 5px;
   }
 }
