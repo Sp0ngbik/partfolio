@@ -9,7 +9,7 @@ const Footer = () => {
       <div>
         Vladyslav Ostapuk /
         <span>
-          <br /> &#9400; 2024 Vladyslav Ostapuk
+          <br /> &#9400; 2026 Vladyslav Ostapuk
         </span>
       </div>
       <div className={s.navLinks}>

@@ -30,7 +30,7 @@ const About = () => {
         <LampContainer>
           <p>About</p>
           <div>
-            I am Frontend Developer with <span>over 2 years </span> of practical experience, I
+            I am Frontend Developer with <span>over 4 years </span> of practical experience, I
             specialize in crafting web applications using <span>React and Next.js.</span> My passion
             for IT technologies and Frontend development spans over two years, during which I`ve
             consistently aimed for excellence in code quality and UI enhancement.
