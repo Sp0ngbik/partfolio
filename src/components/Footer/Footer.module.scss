@@ -17,10 +17,23 @@
     place-content: center center;
     align-items: center;
 
+
     & a {
+flex:1;
+
       padding: 5px;
+
+text-align: center;
+
       background-color: var(--color-dark-700);
       border-radius: 5px;
+
+transition: 0.2s;
+
+      &:hover{
+        cursor: pointer;
+        background-color: var(--color-dark-500);
+      }
     }
   }
 

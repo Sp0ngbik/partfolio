@@ -2,6 +2,9 @@ import s from './Footer.module.scss'
 import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
+import { Anchors } from '@/common/const/const'
+
+
 
 const Footer = () => {
   return (
@@ -13,9 +16,9 @@ const Footer = () => {
         </span>
       </div>
       <div className={s.navLinks}>
-        <Link href={'/'}>About</Link>
-        <Link href={'/projects'}>Projects</Link>
-        <Link href={'/resume'}>Resume</Link>
+        <a href={Anchors.about}>About</a>
+        <a href={Anchors.project}>Projects</a>
+        <a href={Anchors.contact}>Contacts</a>
       </div>
       <div className={s.socialLinks}>
         <Link href={'https://github.com/Sp0ngbik'}>
