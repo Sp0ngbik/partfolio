@@ -19,9 +19,9 @@ export const projectsCommercial: ProjectType[] = [
   {
     title: 'Molecule',
     url: 'https://molecule-pi.vercel.app/',
-    image: '/Projects/molecule.jpg',
+    image: '/projects/molecule.jpg',
     description:
-      '  Molecule is a leading design marketplace that harnesses creativity and fosters innovation.\n' +
+      'Molecule is a leading design marketplace that harnesses creativity and fosters innovation.\n' +
       'Offering a transformative platform where businesses can hire top-notch designers to bring\n' +
       'their vision to life, Molecule is revolutionizing the way design Projects are handled. By\n' +
       'bridging the gap between companies and elite designers from all over the world, we ensure\n' +
