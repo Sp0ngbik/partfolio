@@ -1,13 +1,14 @@
 import s from './Header.module.scss'
-import Link from "next/link";
+import { Anchors } from '@/common/const/const'
+import React from 'react'
 
 const Header = () => {
   return (
     <header>
       <div className={s.navBar}>
-        <Link href={'/'}>About</Link>
-        <Link href={'/projects'}>Projects</Link>
-        <Link href={'/resume'}>Resume</Link>
+        <a href={Anchors.about}>About</a>
+        <a href={Anchors.project}>Projects</a>
+        <a href={Anchors.contact}>Contacts</a>
       </div>
     </header>
   )

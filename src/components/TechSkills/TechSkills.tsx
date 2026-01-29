@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 import s from './TechSkills.module.scss'
 import { techArr, toolsArr, uiArr } from '@/common/const/const'
-import { Sparkles } from '@/components/Sparkles'
+import { Sparkles } from '@/components/TechSkills/ui/Sparkles'
 
 interface AnimationOptions {
   from: { [key: string]: number | string }

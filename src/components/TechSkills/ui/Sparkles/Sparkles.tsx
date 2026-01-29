@@ -1,6 +1,6 @@
 import React from 'react'
 import s from './Sparkles.module.scss'
-import { SparklesCore } from '@/components/Sparkles/SparkleCore'
+import { SparklesCore } from './SparkleCore'
 
 export const Sparkles = () => {
   return (

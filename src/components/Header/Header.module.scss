@@ -1,16 +1,39 @@
 .navBar {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+
 
   max-width: 432px;
   height: 60px;
 
-  background-color: var(--color-dark-900);
   border-radius: 12px;
 
   & a {
+flex:1;
+
+padding: 16px;
+
     font-size: var(--font-size-s);
     color: var(--color-light-500);
+text-align: center;
+
+  background-color: var(--color-dark-900);
+
+
+transition: 0.2s;
+
+&:first-child {
+  border-radius:15px 0 0 15px
+}
+
+    &:last-child {
+      border-radius:0 15px 15px 0
+
+    }
+
+    &:hover{
+      cursor: pointer;
+      background-color: var(--color-dark-500);
+    }
   }
 }
