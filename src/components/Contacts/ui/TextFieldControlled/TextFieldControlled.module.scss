@@ -1,0 +1,59 @@
+.textFieldWrapper {
+  display: flex;
+  flex-direction: column;
+
+  & .fieldLabel {
+    margin: 0 0 10px;
+    color: var(--color-dark-500);
+
+    & span{
+      color: #ff4d4f;
+    }
+  }
+
+  & .inputStyle {
+    resize: none;
+
+    position: relative;
+
+    width: 300px;
+    height: 30px;
+
+
+    font-size: var(--font-size-l);
+    color: var(--color-light-300);
+
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color-dark-500);
+    outline: none;
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      box-shadow: 0 0 0 1000px transparent;
+      transition: background-color 5000s ease-in-out 0s;
+
+      -webkit-text-fill-color: var(--color-light-300);
+
+      &::placeholder {
+        position: absolute;
+        top: 0;
+        font-size: var(--font-size-xl);
+      }
+    }
+  }
+
+  & .errorContainer {
+    min-height: 20px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+  }
+
+  & .errorMessage {
+    display: block;
+    font-size: 12px;
+    color: #ff4d4f;
+  }
+}

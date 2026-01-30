@@ -6,27 +6,49 @@ import { ProfileCard } from '@/components/About/ui/ProfileCard/ProfileCard'
 import { LampContainer } from '@/components/About/ui/Lamp/LampContainer'
 
 const About = () => {
-  const textProduce: RefObject<HTMLDivElement> = useRef(null)
+  const roleRef: RefObject<HTMLSpanElement> = useRef(null)
   const containerRef: RefObject<HTMLDivElement> = useRef(null)
+
+  const roles = ['Frontend Developer', 'React Developer', 'Frontend Engineer']
+
   useEffect(() => {
     gsap.registerPlugin(TextPlugin)
-    gsap.to(textProduce.current, {
-      duration: 3,
-      text: {
-        value: 'Uladzislau Ostapuk Frontend Developer',
-      },
-      ease: 'none',
+
+    const tl = gsap.timeline({ repeat: -1 })
+
+    roles.forEach(role => {
+      tl.to(roleRef.current, {
+        duration: 1.5,
+        text: role,
+        delay: 0.5,
+        ease: 'none',
+      })
+        .to({}, { duration: 1.5 })
+        .to(roleRef.current, {
+          duration: 1,
+          text: '',
+          ease: 'none',
+        })
     })
-  })
+
+    return () => {
+      tl.kill()
+    }
+  }, [])
+
   return (
     <div>
       <div className={s.infoBlock} ref={containerRef}>
-        <div ref={textProduce}></div>
+        <div className={s.title}>
+          <span>Uladzislau Ostapuk </span>
+          <span ref={roleRef} className={s.typewriter}></span>
+          <span className={s.cursor}>_</span>
+        </div>
         <div>
           <ProfileCard />
         </div>
       </div>
-      <div className={s.about} id='about'>
+      <div className={s.about} id="about">
         <LampContainer>
           <p>About</p>
           <div>
@@ -39,6 +61,6 @@ const About = () => {
       </div>
     </div>
   )
-};
+}
 
-export default About;
+export default About

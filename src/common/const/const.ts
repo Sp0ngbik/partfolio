@@ -6,7 +6,7 @@ export const toolsArr = ['Postman', 'Figma', 'GitHub', 'Swagger']
 
 export enum Anchors {
   about = '#about',
-  contact = '#contact',
+  contact = '#contacts',
   project = '#projects',
 }
 
@@ -111,6 +111,6 @@ export const projectsPetProjects: ProjectType[] = [
       'As the Team Lead for this pet project, I architected the application and coordinated a small' +
       ' team, managing the development process through Git and Code Reviews. This project ' +
       'demonstrates my ability to build scalable data-driven applications while successfully' +
-      'leading a collaborative team.',
+      ' leading a collaborative team.',
   },
 ]

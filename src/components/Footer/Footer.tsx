@@ -10,9 +10,8 @@ const Footer = () => {
   return (
     <footer className={s.footerWrapper}>
       <div>
-        Vladyslav Ostapuk /
         <span>
-          <br /> &#9400; 2026 Vladyslav Ostapuk
+          <br /> &#9400; 2026 Uladzislau Ostapuk
         </span>
       </div>
       <div className={s.navLinks}>

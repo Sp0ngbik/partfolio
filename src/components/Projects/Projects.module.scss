@@ -38,10 +38,25 @@ transition: 0.3s;
   align-items: flex-start;
 
   width: 100%;
+  min-height: 650px;
   margin: 10px auto;
 
   color: var(--color-light-300);
 
+  &::after{
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+    left: -50%;
+
+    display: flex;
+
+    width: 200%;
+    height: 2px;
+
+    background-color: var(--color-light-300);
+  }
 
 
   a {
